@@ -82,6 +82,12 @@ git --version
 irm https://claude.ai/install.ps1 | iex
 ```
 
+执行失败爆红色，可以修改为执行以下命令：
+（上面这个步骤本身是官方推荐的标准流程，但在你的实际环境里，核心问题出在「网络环境」上，导致这个命令根本无法正常工作）
+```powershell
+winget install Anthropic.ClaudeCode
+```
+
 #### 2.3 等待安装完成
 
 安装过程会显示进度信息，完成后会显示：
