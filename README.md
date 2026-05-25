@@ -189,7 +189,7 @@ claude --version
    ```
 
 4、编辑文件
-   ```text
+   ```
    Claude Code 接入 DeepSeek 配置
    $env:ANTHROPIC_BASE_URL = "https://api.deepseek.com/anthropic"
    $env:ANTHROPIC_AUTH_TOKEN = "sk-你的DeepSeek_API_Key"
@@ -216,7 +216,9 @@ claude --version
    ```
 
 9、退出
-/exit
+   ```powershell
+   /exit
+   ```
 
 10、每次都要询问，配置auto accept模式
    ```powershell
