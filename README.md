@@ -174,35 +174,52 @@ claude --version
 #### 选项 C：配置DeepSeek模型
 
 1、执行命令，打开存放用户自定义配置（比如环境变量）的文件路径
-notepad $PROFILE
+   ```powershell
+   notepad $PROFILE
+   ```
 
 2、找不到文件，则执行以下命令创建
-New-Item -Path $PROFILE -Type File -Force
+   ```powershell
+   New-Item -Path $PROFILE -Type File -Force
+   ```
 
 3、再次打开
-notepad $PROFILE
+   ```powershell
+   notepad $PROFILE
+   ```
 
 4、编辑文件
-# Claude Code 接入 DeepSeek 配置
-$env:ANTHROPIC_BASE_URL = "https://api.deepseek.com/anthropic"
-$env:ANTHROPIC_AUTH_TOKEN = "sk-你的DeepSeek_API_Key"
-$env:ANTHROPIC_MODEL = "deepseek-v4-flash"
+   ```text
+   Claude Code 接入 DeepSeek 配置
+	$env:ANTHROPIC_BASE_URL = "https://api.deepseek.com/anthropic"
+	$env:ANTHROPIC_AUTH_TOKEN = "sk-你的DeepSeek_API_Key"
+	$env:ANTHROPIC_MODEL = "deepseek-v4-flash"
+   ```
 
 5、让配置立马生效
-. $PROFILE
+   ```powershell
+   . $PROFILE
+   ```
 
 6、第五步让配置立马生效爆红，则修改PowerShell的执行策略限制
 	以管理员身份重新打开 PowerShell，执行【Set-ExecutionPolicy RemoteSigned -Scope CurrentUser】，成功后再次执行【. $PROFILE】
 
 7、查看是否配置成功
-echo $env:ANTHROPIC_BASE_URL
-echo $env:ANTHROPIC_MODEL
+   ```powershell
+   echo $env:ANTHROPIC_BASE_URL
+	echo $env:ANTHROPIC_MODEL
+   ```
 
 8、运行CLI页面
-claude
+   ```powershell
+   claude
+   ```
 
 9、退出
 /exit
+
+10、每次都要询问，配置auto accept模式
+对话框输入，配置auto accept模式，选择auto模式
 
 
 ---
