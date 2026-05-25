@@ -191,9 +191,9 @@ claude --version
 4、编辑文件
    ```text
    Claude Code 接入 DeepSeek 配置
-	$env:ANTHROPIC_BASE_URL = "https://api.deepseek.com/anthropic"
-	$env:ANTHROPIC_AUTH_TOKEN = "sk-你的DeepSeek_API_Key"
-	$env:ANTHROPIC_MODEL = "deepseek-v4-flash"
+   $env:ANTHROPIC_BASE_URL = "https://api.deepseek.com/anthropic"
+   $env:ANTHROPIC_AUTH_TOKEN = "sk-你的DeepSeek_API_Key"
+   $env:ANTHROPIC_MODEL = "deepseek-v4-flash"
    ```
 
 5、让配置立马生效
@@ -207,7 +207,7 @@ claude --version
 7、查看是否配置成功
    ```powershell
    echo $env:ANTHROPIC_BASE_URL
-	echo $env:ANTHROPIC_MODEL
+   echo $env:ANTHROPIC_MODEL
    ```
 
 8、运行CLI页面
@@ -219,8 +219,9 @@ claude --version
 /exit
 
 10、每次都要询问，配置auto accept模式
-对话框输入，配置auto accept模式，选择auto模式
-
+   ```powershell
+   对话框输入，配置auto accept模式，选项里选择auto模式
+   ```
 
 ---
 
